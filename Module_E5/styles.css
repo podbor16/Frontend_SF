@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 500px; /* фиксированная ширина для блока с изображениями */
+    height: 300px; /* фиксированная высота для блока с изображениями */
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.5s ease-in-out; /* анимация при переключении */
+}
+
+.slider-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    outline: none; /* убираем стандартный outline */
+}
+
+.slider-button:hover {
+    background-color: #0056b3; /* цвет кнопки при наведении */
+}
+
+.slider-button:focus {
+    outline: 2px solid #0056b3; /* добавляем outline при фокусе */
+}
